@@ -1,0 +1,11 @@
+#!/bin/sh
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+
+echo "================================"
+echo " Welcome to Embedded Linux!"
+echo " BusyBox initramfs is running"
+echo "================================"
+
+exec /bin/sh
